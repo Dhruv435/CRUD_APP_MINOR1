@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Overview</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      ul {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      ul li {
+        margin: 5px 0;
+      }
+      .code {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: monospace;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Website Overview</h1>
+
+    <div class="section">
+      <h2>1. Home Page (Index)</h2>
+      <p>
+        The Home Page is the starting point of our web application, designed to
+        provide users with an intuitive and visually pleasing shopping
+        experience. At the top, we have a well-structured header that enhances
+        navigation:
+      </p>
+      <ul>
+        <li>
+          The website logo is positioned on the left side for brand recognition.
+        </li>
+        <li>
+          The search functionality is centered in the header, allowing users to
+          quickly find products by name or category.
+        </li>
+        <li>
+          To the right, we have navigation links such as Home, Cart, and Bag,
+          providing easy access to various sections.
+        </li>
+      </ul>
+      <p>
+        <strong>Product Display:</strong> The main section of the homepage
+        showcases 20 products at a time. Each product is presented with an
+        image, price, and a short description. Users can quickly glance at
+        essential details before making a purchase decision. Products are laid
+        out in an organized grid, offering a seamless browsing experience.
+      </p>
+      <p>
+        <strong>Add to Cart Functionality:</strong> Every product features an
+        Add to Cart button, which allows users to instantly add that product to
+        their cart. This functionality is powered by JavaScript, ensuring that
+        the product’s image, name, description, and price are all captured when
+        added.
+      </p>
+      <p>
+        <strong>Footer:</strong> At the bottom of the page, the footer contains
+        essential links and company information, rounding off the user
+        experience on the homepage.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>2. Cart Page</h2>
+      <p>
+        The Cart Page is where users can review and manage the products they’ve
+        added from the homepage. The layout is consistent with the homepage but
+        has a distinct style to avoid conflicts in CSS.
+      </p>
+      <p>
+        <strong>Cart Layout:</strong> All products added to the cart are
+        displayed in a single column format. Each row contains:
+      </p>
+      <ul>
+        <li>A checkbox for selecting the product.</li>
+        <li>An image for quick visual identification.</li>
+        <li>The product’s name, description, and price.</li>
+      </ul>
+      <p>
+        <strong>Dynamic Actions:</strong> Users can select multiple products
+        using the checkboxes, and the total price of the selected products is
+        automatically updated. There are also buttons for removing individual
+        items from the cart or proceeding to the checkout page. All of this is
+        managed through JavaScript, making the experience dynamic and
+        responsive.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>3. Checkout Page</h2>
+      <p>
+        The Checkout Page is the final step before completing the purchase. Upon
+        arriving here, users see a summary of the products they’ve selected on
+        the Cart Page. This page displays:
+      </p>
+      <ul>
+        <li>The product image, name, description, and price.</li>
+        <li>A calculated total price of all the selected products.</li>
+      </ul>
+      <p>
+        <strong>User Form:</strong> Below the product summary, a customer
+        details form allows users to enter their personal information, including
+        their name, address, and phone number. This data is crucial for
+        processing the order and delivery.
+      </p>
+      <p>
+        <strong>Order Submission:</strong> Once users fill out the form and
+        click the Submit Order button, the information is sent to the database.
+        The backend stores both the product details and customer data, ensuring
+        the order is properly recorded and processed.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>4. Database Integration</h2>
+      <p>
+        The database is the backbone of our application, where all critical data
+        is stored and managed. It handles:
+      </p>
+      <ul>
+        <li>
+          <strong>Product Data:</strong> Information about all available
+          products, including their name, price, description, and image URLs, is
+          fetched from the database and dynamically displayed on the home page.
+        </li>
+        <li>
+          <strong>Cart and Order Data:</strong> When a user adds a product to
+          the cart, the product details are temporarily held, but upon checkout,
+          the order details are saved in the database along with customer
+          information. This ensures a smooth flow from product selection to
+          order completion.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

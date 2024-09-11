@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Shoes Shopping</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" style="height: 35px; width: 65px" alt="Website Logo" />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><i class="fa fa-home"
+          style="font-size: 36px; color: white"></i></a>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search product by name" />
+      <button type="button" onclick="searchProduct()">Search</button>
+    </div>
+    <nav>
+      <a href="cart.html">My Cart</a>
+      <a href="checkout.html">My Bag</a>
+      <a href="database.html">My Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Loop over products here -->
+    <div class="products-container">
+      <div class="product" id="product1">
+        <img src="shoes1.jpg" alt="Product 1" />
+        <h2>Nike</h2>
+        <p>₹12 795.00</p>
+        <p>Air Jordan 4 RM</p>
+        <button onclick="addToCart('product1', 'Nike', 12795.00, 'Air Jordan 4 RM', 'shoes1.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product3">
+        <img src="shoes3.jpg" alt="Product 1" />
+        <h2>Nike</h2>
+        <p>₹11 234.00</p>
+        <p>Jordan Stadium 90</p>
+        <button onclick="addToCart('product3', 'Nike', 11234.00,'Jordan Stadium 90','shoes3.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes7.jpg" alt="Product 1" />
+        <h2>Puma</h2>
+        <p>₹3 360</p>
+        <p>Men Pacer Future Shoes</p>
+        <button onclick="addToCart('product1', 'Puma', 3360.00,'Men Pacer Future Shoes','shoes7.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes13.jpg" alt="Product 1" />
+        <h2>new balance</h2>
+        <p>₹5 789</p>
+        <p>Mens 1440 Sneaker</p>
+        <button onclick="addToCart('product1', 'new balance', 5789.00,'Mens 1440 Sneaker','shoes13.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes8.jpg" alt="Product 1" />
+        <h2>Puma</h2>
+        <p>₹3 600</p>
+        <p>BMW M Motorsport Drift</p>
+        <button onclick="addToCart('product1', 'Puma', 3600.00,'BMW M Motorsport Drift','shoes8.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes4.jpg" alt="Product 4" />
+        <h2>Nike</h2>
+        <p>₹15 000.00</p>
+        <p>Jordan Spizike Low</p>
+        <button onclick="addToCart('product4', 'Nike', 15000.00,'Jordan Spizike Low','shoes4.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes9.jpg" alt="Product 1" />
+        <h2>Skechers</h2>
+        <p>₹3 499</p>
+        <p>Mens Arch Fit</p>
+        <button onclick="addToCart('product1', 'Skechers', 3499.00,'Mens Arch Fit ','shoes9.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes10.jpg" alt="Product 1" />
+        <h2>Puma</h2>
+        <p>₹3 499</p>
+        <p>Mens Lqdcell</p>
+        <button onclick="addToCart('product1', 'Puma', 3499.00,'Mens Lqdcell ','shoes10.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes11.jpg" alt="Product 1" />
+        <h2>Skechers</h2>
+        <p>₹4 356</p>
+        <p>Mens-GO RUN ELEVATE</p>
+        <button onclick="addToCart('product1', 'Skechers', 4356.00,'Mens-GO RUN ELEVATE ','shoes11.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes12.jpg" alt="Product 1" />
+        <h2>Puma</h2>
+        <p>₹5 849</p>
+        <p>Mens BMW MMS Trinity</p>
+        <button onclick="addToCart('product1', 'Puma', 5849.00,'Mens BMW MMS Trinity ','shoes12.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes6.jpg" alt="Product 2" />
+        <h2>Puma</h2>
+        <p>₹9 149</p>
+        <p>Magnify Nitro Surge</p>
+        <button onclick="addToCart('product6', 'Puma', 9149.00,'Magnify Nitro Surge ','shoes6.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes14.jpg" alt="Product 1" />
+        <h2>new balance</h2>
+        <p>₹6 628</p>
+        <p>Mens Dark shoes</p>
+        <button
+          onclick="addToCart('product1', 'new balance', 6628.00,'Mens Dark Mushroom Running Shoes','shoes14.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes5.jpg" alt="Product 5" />
+        <h2>Nike</h2>
+        <p>₹12 345.00</p>
+        <p>Air Jorden 1 Mid</p>
+        <button onclick="addToCart('product5', 'Nike', 12345.00,'Air Jordan 1 Mid','shoes5.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product1">
+        <img src="shoes15.jpg" alt="Product 1" />
+        <h2>new balance</h2>
+        <p>₹8 617</p>
+        <p>mens Legacy Sneaker</p>
+        <button onclick="addToCart('product1', 'new balance', 8617.00,'mens Legacy Sneaker','shoes15.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <div class="product" id="product2">
+        <img src="shoes2.jpg" alt="Product 2" />
+        <h2>Nike</h2>
+        <p>₹12 243.00</p>
+        <p>Air Jordan 1 Mid SE</p>
+        <button onclick="addToCart('product2', 'Nike', 12243.00, 'Air Jordan 1 Mid SE', 'shoes2.jpg')">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Repeat for other products -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Online Shopping. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

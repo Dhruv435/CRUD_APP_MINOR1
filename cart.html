@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="logo.png"
+          style="height: 35px; width: 65px"
+          alt="Website Logo"
+        />
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="database.html">My Order</a>
+      </nav>
+    </header>
+    <div class="products-containers">
+      <div class="products">
+        <main>
+          <form id="cartForm">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>select</th>
+                  <th>Image</th>
+                  <th>Product</th>
+                  <th>Description</th>
+                  <th>Price</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="cartBody">
+                <!-- Cart items will be added here by JavaScript -->
+              </tbody>
+            </table>
+            <button
+              class="checkout-btn"
+              type="button"
+              onclick="proceedToCheckout()"
+            >
+              Proceed to Checkout
+            </button>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Online Shopping. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
